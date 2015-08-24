@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+		android:id="@+id/welcomeScreenTextView1"
+		android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"/>
+    
+    <TextView
+		android:id="@+id/welcomeScreenTextView2"
+		android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restaurant"
+        android:gravity="center"
+		android:textSize="35sp"
+		android:layout_below="@id/welcomeScreenTextView1"
+		android:layout_centerInParent="true"/>
+    
+    <TextView
+		android:id="@+id/welcomeScreenTextView3"
+		android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inventory"
+        android:gravity="center"
+		android:textSize="35sp"
+		android:layout_below="@id/welcomeScreenTextView2"
+		android:layout_centerInParent="true"/>
+    
+    <TextView
+		android:id="@+id/welcomeScreenTextView4"
+		android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/manager"
+        android:gravity="center"
+		android:textSize="35sp"
+		android:layout_below="@id/welcomeScreenTextView3"
+		android:layout_centerInParent="true"/>
+    
+    <Button
+		android:id="@+id/launchButton"
+		android:layout_marginTop="50dp"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/welcome_button"
+        android:layout_below="@id/welcomeScreenTextView4"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

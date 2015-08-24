@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">Restaurant Inventory Manager</string>
+    <string name="welcome">Welcome</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="inventory">Inventory</string>
+    <string name="manager">Manager</string>
+    <string name="welcome_button">LAUNCH</string>
+
+</resources>
