@@ -3,10 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="#FFE3F1" >
     
     <TextView
-		android:id="@+id/welcomeScreenTextView1"
+		android:id="@+id/welcomeTextView"
 		android:layout_marginTop="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,45 +18,50 @@
         android:layout_centerInParent="true"/>
     
     <TextView
-		android:id="@+id/welcomeScreenTextView2"
+		android:id="@+id/restaurantTextView"
 		android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/restaurant"
-        android:gravity="center"
 		android:textSize="35sp"
-		android:layout_below="@id/welcomeScreenTextView1"
+		android:gravity="center"
+		android:layout_below="@id/welcomeTextView"
 		android:layout_centerInParent="true"/>
     
     <TextView
-		android:id="@+id/welcomeScreenTextView3"
+		android:id="@+id/inventoryTextView"
 		android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/inventory"
         android:gravity="center"
 		android:textSize="35sp"
-		android:layout_below="@id/welcomeScreenTextView2"
+		android:layout_below="@id/restaurantTextView"
 		android:layout_centerInParent="true"/>
     
     <TextView
-		android:id="@+id/welcomeScreenTextView4"
+		android:id="@+id/managerTextView"
 		android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/manager"
         android:gravity="center"
 		android:textSize="35sp"
-		android:layout_below="@id/welcomeScreenTextView3"
+		android:layout_below="@id/inventoryTextView"
 		android:layout_centerInParent="true"/>
     
     <Button
 		android:id="@+id/launchButton"
-		android:layout_marginTop="50dp"
-		android:layout_width="150dp"
+		android:background="#9999ff"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="80dp"
+		android:layout_marginBottom="15dp"
+		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:gravity="center"
 		android:text="@string/welcome_button"
-        android:layout_below="@id/welcomeScreenTextView4"
-        android:layout_centerInParent="true"/>
+		android:textStyle="bold"
+        android:layout_below="@id/managerTextView"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>

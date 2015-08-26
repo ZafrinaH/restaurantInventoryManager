@@ -6,5 +6,18 @@
     <string name="inventory">Inventory</string>
     <string name="manager">Manager</string>
     <string name="welcome_button">LAUNCH</string>
-
+    <string name="restaurant_name">Name of Restaurant:</string>
+    <string name="next_button">NEXT</string>
+    <string name="menu_item">Name of Menu Item:</string>
+    <string name="add_button">ADD</string>
+    <string name="menu_item_name">Menu Item</string>
+    <string name="ingredients">IINGREDIENTS</string>
+    <string name="quantity">QUANTITY</string>
+    <string name="add_more">Add More</string>
+    <string name="ok">OK</string>
+    <string name="inventory_min_max">Please set each inventory items minimum and maximum values: </string>
+    <string name="item">ITEM</string>
+    <string name="min">MIN</string>
+    <string name="max">MAX</string>
+    
 </resources>
