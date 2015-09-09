@@ -3,21 +3,30 @@
     <string name="app_name">Restaurant Inventory Manager</string>
     <string name="welcome">Welcome</string>
     <string name="restaurant">Restaurant</string>
-    <string name="inventory">Inventory</string>
     <string name="manager">Manager</string>
     <string name="welcome_button">LAUNCH</string>
     <string name="restaurant_name">Name of Restaurant:</string>
     <string name="next_button">NEXT</string>
-    <string name="menu_item">Name of Menu Item:</string>
+    <string name="menu_item">Menu Items</string>
     <string name="add_button">ADD</string>
-    <string name="menu_item_name">Menu Item</string>
+    <string name="menu_item_name">MENU ITEMS</string>
     <string name="ingredients">IINGREDIENTS</string>
     <string name="quantity">QUANTITY</string>
     <string name="add_more">Add More</string>
     <string name="ok">OK</string>
     <string name="inventory_min_max">Please set each inventory items minimum and maximum values: </string>
     <string name="item">ITEM</string>
-    <string name="min">MIN</string>
-    <string name="max">MAX</string>
+    <string name="min">MINIMUM QUANTITY</string>
+    <string name="max">MAXIMUM QUANTITY</string>
+    <string name="inventory">Your Inventory</string>
+    <string name="sales">Today\'s Sales</string>
+    <string name="settings">Settings</string>
+    <string name="change_restaurant_name">Restaurant Name</string>
+    <string name="change_menuItem_name">Menu Items</string>
+    <string name="change_ingredient_name">Ingredients</string>
+    <string name="add_todays_sales">Enter Today\'s Sales</string>
+    <string name="refill">Refill Inventory</string>
+    <string name="recipe">Recipe</string>
+    <string name="type">Type</string>
     
 </resources>

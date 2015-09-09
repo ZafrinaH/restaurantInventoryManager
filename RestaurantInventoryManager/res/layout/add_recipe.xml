@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE3F1" >
+    
+    <TextView
+        android:id="@+id/recipeWordTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:text="@string/recipe" />
+    
+    <Spinner
+        android:id="@+id/menuItemsSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recipeWordTextView"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold" />
+    
+    <TableRow 
+        android:id="@+id/tableColumnTitlesRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuItemsSpinner"
+        android:layout_centerInParent="true" >
+        
+        <TextView
+			android:id="@+id/ingredientsColumnTextView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight=".40"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginLeft="10dp"
+			android:padding="10dp"
+			android:background="#3a0078"
+			android:text="@string/ingredients"
+			android:textColor="#ffffff"
+			android:gravity="center"
+			android:textStyle="bold"/>
+        
+        <TextView
+			android:id="@+id/quantityColumnTextView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight=".40"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginLeft="10dp"
+			android:padding="10dp"
+			android:background="#3a0078"
+			android:text="@string/quantity"
+			android:textColor="#ffffff"
+			android:gravity="center"
+			android:textStyle="bold"/>
+        
+        <TextView
+			android:id="@+id/typeColumnTextView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight=".20"
+			android:layout_marginTop="10dp"
+			android:padding="10dp"
+			android:layout_marginBottom="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginLeft="10dp"
+			android:background="#3a0078"
+			android:text="@string/type"
+			android:textColor="#ffffff"
+			android:gravity="center"
+			android:textStyle="bold"/>
+	</TableRow>
+    
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tableColumnTitlesRow" >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="vertical" >
+        
+        <HorizontalScrollView
+			android:id="@+id/horizontalScrollView"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content" >
+        	
+            <TableLayout
+      			android:id="@+id/tableLayout"
+       			android:layout_width="wrap_content"
+       			android:layout_height="wrap_content" >
+       			
+                <TableRow
+            		android:id="@+id/DatatableRow1"
+            		android:layout_width="wrap_content"
+        			android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/ingredientSpinner"
+                        android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight=".40"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:spinnerMode="dropdown"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                    
+                    <EditText
+	       				android:id="@+id/quantityEditText"
+	       				android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight=".40"
+                        android:inputType="numberDecimal|number"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+       					android:background="#b0e0e6"
+                        android:gravity="center"
+               			android:textColor="#000000" >
+                    	<requestFocus />
+    				</EditText>
+    				
+                    <Spinner
+                        android:id="@+id/typeSpinner"
+                        android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight=".20"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:spinnerMode="dropdown"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+           			
+				</TableRow>
+			</TableLayout>
+		</HorizontalScrollView>
+		<TextView
+        	android:id="@+id/addMoreWordTextView"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:layout_marginLeft="10dp"
+	        android:text="@string/add_more"
+    	    android:textAppearance="?android:attr/textAppearanceSmall"
+        	android:textStyle="bold"
+        	android:layout_below="@+id/horizontalScrollView"
+        	android:textColor="#FF0000" />
+    
+    <Button
+    	android:id="@+id/okButton"
+    	android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+    	android:layout_centerInParent="true"
+    	android:gravity="center"
+    	android:background="#9999ff"
+    	android:text="@string/ok"
+    	android:layout_margin="10dp"
+    	android:layout_below="@+id/addMoreWordTextView"
+    	android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+	</ScrollView>
+</RelativeLayout>

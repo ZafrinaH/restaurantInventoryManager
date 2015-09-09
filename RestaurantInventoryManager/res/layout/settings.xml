@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE3F1" >    
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/settings"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp" >
+        
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        
+        	<Button
+				android:id="@+id/change_restaurant_name"
+				android:background="#9999ff"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="70dp"
+    			android:text="@string/change_restaurant_name"
+				android:textStyle="bold" />
+        	
+        	<TextView android:id="@+id/tv1"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_margin="2dp"
+        	    android:background="#FFE3F1"
+        	    android:padding="5dp"
+        	    android:layout_below="@+id/change_restaurant_name"/>
+        
+        	<Button
+				android:id="@+id/change_menuItem_name"
+				android:background="#9999ff"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+    			android:text="@string/change_menuItem_name"
+				android:textStyle="bold"
+				android:layout_below="@+id/tv1" />
+        	
+        	<TextView android:id="@+id/tv2"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_margin="2dp"
+        	    android:background="#FFE3F1"
+        	    android:padding="5dp"
+        	    android:layout_below="@+id/change_menuItem_name"/>
+        	
+        	<Button
+				android:id="@+id/change_ingredient_name"
+				android:background="#9999ff"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+    			android:text="@string/change_ingredient_name"
+				android:textStyle="bold"
+				android:layout_below="@+id/tv2" />
+        	
+        	<TextView android:id="@+id/tv3"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_margin="2dp"
+        	    android:background="#FFE3F1"
+        	    android:padding="5dp"
+        	    android:layout_below="@+id/change_ingredient_name"/>
+        	
+        	<Button
+        	    android:id="@+id/recipe"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_alignParentLeft="true"
+        	    android:layout_below="@+id/tv3"
+        	    android:background="#9999ff"
+        	    android:text="Recipe"
+        	    android:textStyle="bold" />
+        	
+        	<TextView android:id="@+id/tv6"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_margin="2dp"
+        	    android:background="#FFE3F1"
+        	    android:padding="5dp"
+        	    android:layout_below="@+id/recipe"/>
+        	
+        	<Button
+        	    android:id="@+id/add_todays_sales"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:background="#9999ff"
+        	    android:text="@string/add_todays_sales"
+        	    android:textStyle="bold"
+        	    android:layout_below="@+id/tv6" />
+        	
+        	<TextView android:id="@+id/tv7"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_margin="2dp"
+        	    android:background="#FFE3F1"
+        	    android:padding="5dp"
+        	    android:layout_below="@+id/add_todays_sales"/>
+
+        	<Button
+				android:id="@+id/refill"
+				android:background="#9999ff"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+    			android:text="@string/refill"
+				android:textStyle="bold"
+				android:layout_below="@+id/tv7" />
+        	
+        	<TextView android:id="@+id/tv8"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_margin="2dp"
+        	    android:background="#FFE3F1"
+        	    android:padding="5dp"
+        	    android:layout_below="@+id/refill"/>	
+
+        </RelativeLayout>
+	</ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/scrollView1"
+        android:src="@drawable/settings2" />
+
+</RelativeLayout>

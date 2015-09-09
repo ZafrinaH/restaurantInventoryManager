@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme" >
         
         <activity
-            android:name="com.Welcome"
+            android:name="com.DoneWelcome"
             android:label="@string/app_name" 
             android:screenOrientation="portrait">
             <intent-filter>
@@ -24,19 +24,43 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.RestaurantName"
+            android:name="com.DoneRestaurantName"
             android:screenOrientation="portrait" >                       
         </activity>
         <activity
-            android:name="com.MenuItem"
+            android:name="com.DoneMenuItem"
             android:screenOrientation="portrait" >                       
         </activity>
         <activity
-            android:name="com.MenuIngredient"
+            android:name="com.DoneMenuIngredient"
             android:screenOrientation="portrait" >                       
         </activity>
         <activity
-            android:name="com.DatabaseControl"
+            android:name="com.DoneDatabaseControl"
+            android:screenOrientation="portrait" >                       
+        </activity>
+        <activity
+            android:name="com.DoneInventoryDisplay"
+            android:screenOrientation="portrait" >                       
+        </activity>
+        <activity
+            android:name="com.NotDoneSalesToday"
+            android:screenOrientation="portrait" >                       
+        </activity>
+        <activity
+            android:name="com.DoneSettings"
+            android:screenOrientation="portrait" >                       
+        </activity>
+        <activity
+            android:name="com.NotDoneRecipeSettings"
+            android:screenOrientation="portrait" >                       
+        </activity>
+        <activity
+            android:name="com.DoneAddRecipe"
+            android:screenOrientation="portrait" >                       
+        </activity>
+        <activity
+            android:name="com.DoneViewRecipe"
             android:screenOrientation="portrait" >                       
         </activity>
     </application>

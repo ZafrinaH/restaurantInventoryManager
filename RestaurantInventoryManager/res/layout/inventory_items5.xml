@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE3F1" >
+    
+    <TextView
+        android:id="@+id/inventoryWordTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:text="@string/inventory" />
+    
+    <TableRow 
+        android:id="@+id/tableColumnTitlesRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/inventoryWordTextView"
+        android:layout_centerInParent="true" >
+        
+        <TextView
+			android:id="@+id/ingredientsColumnTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.6"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginLeft="10dp"
+			android:padding="10dp"
+			android:background="#3a0078"
+			android:text="@string/ingredients"
+			android:textColor="#ffffff"
+			android:gravity="center"
+			android:textStyle="bold"/>
+        
+        <TextView
+			android:id="@+id/quantityColumnTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.4"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginLeft="10dp"
+			android:padding="10dp"
+			android:background="#3a0078"
+			android:text="@string/quantity"
+			android:textColor="#ffffff"
+			android:gravity="center"
+			android:textStyle="bold"/>
+        
+	</TableRow>
+    
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableColumnTitlesRow"
+        android:layout_centerInParent="true" >
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="vertical" >
+            
+            <HorizontalScrollView
+				android:id="@+id/horizontalScrollView"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content" >
+        		
+        		<TableLayout
+      				android:id="@+id/tableLayout"
+       				android:layout_width="wrap_content"
+       				android:layout_height="wrap_content"
+       				android:layout_marginLeft="20dp" >
+       				
+        		    
+				</TableLayout>
+			</HorizontalScrollView>
+			
+            <Button
+    			android:id="@+id/salesButton"
+    			android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+    			android:layout_centerInParent="true"
+    			android:gravity="center"
+    			android:background="#9999ff"
+    			android:text="@string/sales"
+    			android:layout_margin="10dp"
+    			android:layout_below="@+id/horizontalScrollView"
+    			android:layout_marginTop="10dp"/>
+	
+		</RelativeLayout>
+    </ScrollView>
+    
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/scrollView"
+        android:src="@drawable/settings2" />
+</RelativeLayout>
